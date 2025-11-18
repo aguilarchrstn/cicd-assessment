@@ -1,37 +1,36 @@
 # README_4BACKUP_GFS.md
 
-# 🗂 Backup System - GFS (Grandfather-Father-Son) Strategy
+# 🗂 Backup System – GFS (Grandfather-Father-Son) Strategy
 
-This repository contains a **bash script and cron configuration** to automatically back up a specific folder using the **tar.gz** format.  
-It supports **daily, weekly, and monthly backups** following the GFS backup strategy.
+This repository contains a **Bash backup script** implementing the **GFS backup strategy**.  
+It automatically backs up a specific folder into **daily, weekly, and monthly** tar.gz archives and manages retention to save disk space.  
 
 ---
 
 ## 📌 Features
 
-- **Backup type:** Daily, Weekly, Monthly (GFS strategy)
-- **Compression:** tar.gz
-- **Automatic deletion** of old backups
+- **Backup types:** Daily, Weekly, Monthly (GFS strategy)
+- **Compression:** tar.gz (tarball)
+- **Automatic cleanup** of old backups
 - **Timestamped backups** for easy identification
-- **Easy to configure** folder paths and retention periods
+- **Simple configuration** for source folder, destination folder, and retention periods
 - **Works on Linux systems** with bash
+- Easy to integrate with **cron jobs** for automation
+- Ready for DevOps practice or small production setups
 
 ---
 
 ## 🛠 Requirements
 
-- Linux / macOS system
-- Bash shell
-- Cron daemon
-- Sufficient disk space for backups
+- Linux or macOS system  
+- Bash shell  
+- Cron daemon (for automated scheduling)  
+- Sufficient disk space for backups  
+- Optional: `mail` command for notifications (if extended)
 
 ---
 
-## ⚙️ Setup
+## 📁 Folder Structure
 
-### 1. Place the backup script
+The backup system follows this folder layout:
 
-```bash
-# Copy backup script
-/usr/local/bin/backup.sh
-# Or any path you prefer
