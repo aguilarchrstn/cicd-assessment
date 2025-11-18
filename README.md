@@ -39,6 +39,11 @@ Sending an email alert if the limit is exceeded
 
 Otherwise, printing that disk usage is normal
 
+the output sample is 
+
+  Warning: Disk usage on the server has exceeded 80%.
+  Current usage: 92%
+
 2. What chmod +x script.sh Does
 
 The command chmod +x script.sh gives the script execute permission, which allows it to be run directly using:
